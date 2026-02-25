@@ -34,6 +34,7 @@ body {
 
 .panel {
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .panel-1 {
@@ -138,11 +139,12 @@ body {
         height: 50%;
         justify-self: center;
         border-radius: 20px;
+        margin-top: 40px;
 
         & div:nth-of-type(1) {
             display: flex;
             margin-top: 20px;
-            
+
 
             & div {
                 background-color: rgb(252, 232, 234);
@@ -172,6 +174,7 @@ body {
         & div:nth-of-type(2) {
             background-color: transparent;
             display: flex;
+            margin-top: 0px;
 
             & img {
                 width: 48px;
@@ -282,7 +285,6 @@ body {
     grid-column: 3 / 4;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     z-index: 2;
 
     & div {
@@ -463,12 +465,301 @@ body {
     background-color: var(--orange);
     grid-row: 5 / 10;
     grid-column: 5 / 6;
+    display: flex;
+    flex-direction: column;
+    
+
+    & h2 {
+        margin-left: 8%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        font-size: 40px;
+        font-family: 'Sora-normal', sans-serif;
+    }
+
+    & div {
+        border-radius: 20px 20px 0px 0px;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        width: 85%;
+        height: 23%;
+
+        & div:nth-of-type(1) {
+            width: 100%;
+            background-color: var(--purple);
+            height: 48%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            & h4 {
+                color: white;
+                font-family: 'Sora-normal', sans-serif;
+                margin-left: 20px;
+                margin: 0px;
+                width: 32%;
+                margin-left: 5%;
+            }
+
+            & h5 {
+                margin: 0px;
+                margin-left: 45%;
+                color: white;
+                font-family: sans-serif;
+            }
+        }
+
+        & div:nth-of-type(2) {
+            margin-top: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 0px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+
+            & span {
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                background-color: var(--purple);
+                transition: 0.4s;
+            }
+
+            & span:hover {
+                transform: scale(110%);
+            }
+        }
+    }
+}
+
+.checkmark-first-part {
+    width: 12px !important;
+    height: 2px !important;
+    background-color: white !important;
+    border-radius: 2px !important;
+    margin: 0px !important;
+    margin-top: 18px !important;
+    margin-left: 7px !important;
+    rotate: 45deg;
+    position: absolute;
+}
+
+.checkmark-second-part {
+    width: 16px !important;
+    height: 2px !important;
+    border-radius: 2px !important;
+    margin-top: 16px !important;
+    margin-left: 14px !important;
+    rotate: -45deg;
+    position: absolute;
 }
 
 .panel-6 {
     background-color: var(--light-purple);
     grid-row: 1 / 10;
     grid-column: 7 / 8;
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+        align-self: center;
+        width: 300px;
+        font-size: 40px;
+        font-family: 'Sora-normal', sans-serif;
+    }
+
+    & div {
+        background-color: white;
+        width: 95%;
+        height: 60%;
+        align-self: center;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+
+        & h3 {
+            width: 100%;
+            text-align: center;
+        }
+
+        & div {
+            height: 20%;
+        }
+    }
+
+    & h3 {
+        width: 250px;
+        align-self: center;
+        font-size: 20px;
+        font-family: 'Sora-normal', sans-serif;
+    }
+}
+
+.days-in-week-wrapper {
+    display: flex;
+    flex-direction: row !important;
+
+    & div {
+        text-align: center;
+    }
+}
+
+.purple-time-bars-wrapper {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 10px;
+    height: 150px !important;
+
+    & div {
+        width: 6%;
+        background-color: var(--purple);
+    }
+}
+
+.monday {
+    & div:nth-of-type(1) {
+        margin-top: 60px;
+        padding-top: 100px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(2) {
+        margin-top: 20px;
+        padding-top: 140px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(3) {
+        margin-top: 100px;
+        padding-top: 60px;
+        height: 10px !important;
+    }
+    
+    & div:nth-of-type(4) {
+        margin-top: 70px;
+        padding-top: 90px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(5) {
+        margin-top: 0px;
+        padding-top: 160px;
+        height: 10px !important;
+    }
+}
+
+.tuesday {
+    & div:nth-of-type(1) {
+        margin-top: 50px;
+        padding-top: 110px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(2) {
+        margin-top: 90px;
+        padding-top: 70px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(3) {
+        margin-top: 70px;
+        padding-top: 90px;
+        height: 10px !important;
+    }
+    
+    & div:nth-of-type(4) {
+        margin-top: 120px;
+        padding-top: 40px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(5) {
+        margin-top: 30px;
+        padding-top: 130px;
+        height: 10px !important;
+    }
+}
+
+.wednesday {
+    & div:nth-of-type(1) {
+        margin-top: 100px;
+        padding-top: 60px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(2) {
+        margin-top: 70px;
+        padding-top: 90px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(3) {
+        margin-top: 80px;
+        padding-top: 80px;
+        height: 10px !important;
+    }
+    
+    & div:nth-of-type(4) {
+        margin-top: 30px;
+        padding-top: 130px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(5) {
+        margin-top: 60px;
+        padding-top: 100px;
+        height: 10px !important;
+    }
+}
+
+.thursday {
+    & div:nth-of-type(1) {
+        margin-top: 50px;
+        padding-top: 110px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(2) {
+        margin-top: 70px;
+        padding-top: 90px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(3) {
+        margin-top: 40px;
+        padding-top: 120px;
+        height: 10px !important;
+    }
+    
+    & div:nth-of-type(4) {
+        margin-top: 50px;
+        padding-top: 110px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(5) {
+        margin-top: 110px;
+        padding-top: 50px;
+        height: 10px !important;
+    }
+}
+
+.time-indenticators-wrapper {
+    display: flex;
+    flex-direction: row !important;
+
+    & div {
+        text-align: center;
+    }
 }
 
 .panel-7 {
