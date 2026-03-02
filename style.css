@@ -587,6 +587,7 @@ body {
         & h3 {
             width: 100%;
             text-align: center;
+            margin-top: 10%;
         }
 
         & div {
@@ -602,12 +603,32 @@ body {
     }
 }
 
+.panel-6-line-devider {
+    height: 2px !important;
+    width: 85% !important;
+    background-color: gray !important;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
 .days-in-week-wrapper {
     display: flex;
     flex-direction: row !important;
+    justify-content: center;
+    gap: 12px;
 
     & div {
         text-align: center;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        transition: 0.4s;
+        width: 60px !important;
+        cursor: pointer;
+    }
+
+    & div:hover {
+        background-color: rgb(255, 187, 187);
+        box-shadow: 0px 0px 10px rgb(255, 138, 138);
     }
 }
 
@@ -625,7 +646,44 @@ body {
     }
 }
 
+@keyframes fade-in-monday {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-tuesday {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-wednesday {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-thursday {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-friday {
+    100% {
+        opacity: 1;
+    }
+}
+
 .monday {
+    opacity: 0;
+    animation: fade-in-monday 0.6s forwards;
+
+    & div {
+        box-shadow: 0px 10px 20px rgb(168, 168, 168);
+    }
+
     & div:nth-of-type(1) {
         margin-top: 60px;
         padding-top: 100px;
@@ -658,6 +716,13 @@ body {
 }
 
 .tuesday {
+    opacity: 0;
+    animation: fade-in-tuesday 0.6s forwards;
+
+    & div {
+        box-shadow: 0px 10px 20px rgb(168, 168, 168);
+    }
+
     & div:nth-of-type(1) {
         margin-top: 50px;
         padding-top: 110px;
@@ -690,6 +755,13 @@ body {
 }
 
 .wednesday {
+    opacity: 0;
+    animation: fade-in-wednesday 0.6s forwards;
+
+    & div {
+        box-shadow: 0px 10px 20px rgb(168, 168, 168);
+    }
+
     & div:nth-of-type(1) {
         margin-top: 100px;
         padding-top: 60px;
@@ -722,6 +794,13 @@ body {
 }
 
 .thursday {
+    opacity: 0;
+    animation: fade-in-thursday 0.6s forwards;
+
+    & div {
+        box-shadow: 0px 10px 20px rgb(168, 168, 168);
+    }
+
     & div:nth-of-type(1) {
         margin-top: 50px;
         padding-top: 110px;
@@ -753,12 +832,53 @@ body {
     }
 }
 
+.friday {
+    opacity: 0;
+    animation: fade-in-friday 0.6s forwards;
+
+    & div {
+        box-shadow: 0px 10px 20px rgb(168, 168, 168);
+    }
+
+    & div:nth-of-type(1) {
+        margin-top: 70px;
+        padding-top: 90px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(2) {
+        margin-top: 80px;
+        padding-top: 80px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(3) {
+        margin-top: 50px;
+        padding-top: 110px;
+        height: 10px !important;
+    }
+    
+    & div:nth-of-type(4) {
+        margin-top: 40px;
+        padding-top: 120px;
+        height: 10px !important;
+    }
+
+    & div:nth-of-type(5) {
+        margin-top: 20px;
+        padding-top: 140px;
+        height: 10px !important;
+    }
+}
+
 .time-indenticators-wrapper {
     display: flex;
     flex-direction: row !important;
+    margin-top: 3%;
 
     & div {
         text-align: center;
+        font-family: sans-serif;
     }
 }
 
